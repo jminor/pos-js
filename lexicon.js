@@ -2,7 +2,7 @@
  * Javascript version of Eric Brill's English lexicon.
  */ 
 
-module.exports = {
+Lexicon = {
     "\'": [
         "\""
     ],

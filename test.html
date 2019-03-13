@@ -1,0 +1,25 @@
+<html>
+<body>
+    <script type="text/javascript" src="BrillTransformationRules.js"></script>
+    <script type="text/javascript" src="POSTagger.js"></script>
+    <script type="text/javascript" src="lexicon.js"></script>
+    <script type="text/javascript" src="lexer.js"></script>
+    <script type="text/javascript">
+
+var input_text = "There once was a person named Foofles.";
+
+var lexer = new Lexer();
+var tagger = new POSTagger();
+var start = new Date().getTime();
+var words = lexer.lex(input_text);
+var tags = tagger.tag(words);
+var end = new Date().getTime();
+difference = (end - start);
+for (i in tags) {
+    var tag = tags[i];
+    console.log(tag[0] + " / " + tag[1]);
+}
+
+    </script>
+</body>
+</html>

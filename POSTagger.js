@@ -6,10 +6,9 @@
  * http://www.opensource.org/licenses/lgpl-3.0.html
  */
 
-var TransformationRules = require('./BrillTransformationRules');
+var TransformationRules = BrillTransformationRules;
 var transformationRules = new TransformationRules();
 
-module.exports = POSTagger;
 function POSTagger(){
     this.lexicon = require('./lexicon');
 }

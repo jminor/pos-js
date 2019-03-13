@@ -142,5 +142,3 @@ function rule8(taggedSentence, index) {
     taggedSentence[index][1] = "VBG";
   }
 }
-
-module.exports = BrillTransformationRules;
